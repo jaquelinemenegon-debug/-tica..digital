@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ética Digital: O Game da Internet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-shield-halved"></i> Ética Digital <span class="neon-text">Ctrl+Alt+Certo</span></h1>
+        <p>Você dita as regras ou cai nas fakes? Descubra abaixo!</p>
+        <div class="visitor-counter">
+            <i class="fa-solid fa-eye"></i> Visitas: <span id="counter-val">1.337</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <div class="card card-purple">
+                <i class="fa-solid fa-mask icon-card"></i>
+                <h3>Anonimato ≠ Sem Lei</h3>
+                <p>O que você faz no digital deixa pegadas. Respeito na tela é o mesmo do olho no olho!</p>
+            </div>
+            <div class="card card-blue">
+                <i class="fa-solid fa-magnifying-glass icon-card"></i>
+                <h3>Fake News Cringe</h3>
+                <p>Passar informação falsa sem checar é mancada. Quebre a corrente das mentiras.</p>
+            </div>
+            <div class="card card-pink">
+                <i class="fa-solid fa-lock icon-card"></i>
+                <h3>Seus Dados, Suas Regras</h3>
+                <p>Cuidado com o que compartilha. Exposição demais vira alvo fácil na rede.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2><i class="fa-solid fa-gamepad"></i> Desafio do Quiz</h2>
+            <p>Responda rápido e conquiste seu lugar no Ranking!</p>
+            
+            <div class="quiz-box" id="quiz-box">
+                <div id="question-container">
+                    <h3 id="question-text">Carregando pergunta...</h3>
+                    <div id="options-container" class="options-grid"></div>
+                </div>
+                
+                <div id="score-container" class="hide">
+                    <h3>Fim de Jogo! 🎮</h3>
+                    <p>Sua pontuação: <span id="final-score" class="neon-text">0</span> acertos.</p>
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder="Seu Nickname/Nome" maxlength="15">
+                        <button id="save-score-btn">Salvar no Ranking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ranking-section">
+            <h2><i class="fa-solid fa-trophy"></i> Top Creators da Ética</h2>
+            <div class="ranking-table-wrapper">
+                <table id="ranking-table">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Player</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com ⚡ para a nova geração digital.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
